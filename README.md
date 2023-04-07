@@ -4,7 +4,7 @@ I downloaded Pro Football Reference's 2022 Individual Passing table and I will b
 
 ## Project Plan
 ### Step 1: Data Collection
-The first step is to collect the data required for analysis. There are many sources of NFL data, but one of the most popular is the NFL's official API.
+The first step is to collect the data required for analysis. There are many sources of NFL data, but one of the most popular is the Pro Football Reference. I will be using the 2022 NFL Individual Passing data from the following link: 
 
 ### Step 2: Data Cleaning
 After collecting the data, the next step is to clean it. Data cleaning involves removing missing values, outliers, and inconsistencies in the data. This will ensure that the data is ready for analysis.
