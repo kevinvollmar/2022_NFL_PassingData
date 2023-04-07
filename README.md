@@ -2,7 +2,7 @@
  
 I downloaded Pro Football Reference's 2022 Individual Passing table and I will be using Python to complete data analysis.
 
-##Project Plan
+## Project Plan
 Step 1: Data Collection
 The first step is to collect the data required for analysis. There are many sources of NFL data, but one of the most popular is the NFL's official API.
 
