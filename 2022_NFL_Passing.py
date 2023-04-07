@@ -23,3 +23,8 @@ passing_data = pd.read_csv('2022_NFL_PassingTable.csv')
 # plt.xlabel('Touchdowns')
 # plt.ylabel('Interceptions')
 # plt.show()
+
+# Seaborn data analysis looking to see if there is correlation between yards per attempt and sack %. Along with colorizing by age
+filtered_subset = passing_data.loc[passing_data['Att'] >= 100]
+sns.scatterplot(data=filtered_subset, x='Y/A', y='Sk%', hue='Age')
+plt.show()
