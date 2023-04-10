@@ -29,14 +29,11 @@ r2 = r2_score(y_test, predictions)
 mse = mean_squared_error(y_test, predictions)
 print('Mean squared error:', mse)
 
-plt.scatter(y_test, predictions)
+# Add regression line with R-squared value to the plot
+sns.regplot(x=y_test, y=predictions, scatter=True, color='red',
+            line_kws={'label':"R-squared = {:.2f}".format(r2)})
+
 plt.xlabel('Actual QBR')
 plt.ylabel('Predicted QBR')
 plt.title('Actual v. Predicted QBR')
-
-# Add regression line with R-squared value to the plot
-sns.regplot(x=y_test, y=predictions, scatter=False, color='red',
-            line_kws={'label':"R-squared = {:.2f}".format(r2)})
-plt.legend(loc='upper left')
-
 plt.show()
